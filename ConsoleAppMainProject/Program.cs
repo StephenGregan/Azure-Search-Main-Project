@@ -141,7 +141,7 @@ namespace ConsoleAppMainProject
                 var definition = new Index()
                 {
                     Name = InterpreterIntelligenceIndex,
-                    Fields = FieldBuilder.BuildForType<Row>()
+                    Fields = FieldBuilder.BuildForType<Welcome>()
                 
                 //Name = InterpreterIntelligenceIndex,
                 //Fields = new[]
@@ -161,7 +161,7 @@ namespace ConsoleAppMainProject
                 //new Field("DATE_CREATED",   DataType.DateTimeOffset) { IsKey = false, IsSearchable = false, IsFilterable = true,  IsSortable = true,  IsFacetable = true,  IsRetrievable = true},
                 //new Field("DATE_EDITED",    DataType.DateTimeOffset) { IsKey = false, IsSearchable = false, IsFilterable = true,  IsSortable = true,  IsFacetable = true,  IsRetrievable = true}
                 //}
-            };
+                };
 
                 _searchClient.Indexes.Create(definition);
             }
@@ -196,8 +196,8 @@ namespace ConsoleAppMainProject
             {
                 var values = new NameValueCollection
                 {
-                    { "j_username", "[USERNAME]" },
-                    { "j_password", "[PASSWORD]" },
+                    { "j_username", "" },
+                    { "j_password", "" },
                 };
                 Console.WriteLine("Trying to validate username and password.....\n");
 
