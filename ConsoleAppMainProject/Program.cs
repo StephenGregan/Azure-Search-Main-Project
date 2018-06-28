@@ -57,8 +57,8 @@ namespace ConsoleAppMainProject
             var dataSource =
                 DataSource.AzureBlobStorage(
                     name: InterpreterIntelligenceDataSource,
-                    storageConnectionString: "DefaultEndpointsProtocol=https;AccountName=ronanblobstorage;AccountKey=Z8nPhGaeduop96WgvZ2FP6QKGNjXeN/G8RmyoJtX97Cycusq5WOaIymucItSNnrv31ChYMICh04nmyHbCmySYw==;EndpointSuffix=core.windows.net",
-                    containerName: "stephengregan");
+                    storageConnectionString: 
+                    containerName: "");
 
             try
             {
